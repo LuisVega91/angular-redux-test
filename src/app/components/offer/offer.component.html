@@ -1,7 +1,7 @@
 <div class="row mt-5 mb-5">
   <div class="col-6">
     <select [(ngModel)]="slectedOffer" class="form-select" aria-label="Default select example"  (change)="update()" >
-      <option selected>Seleccione una oferta</option>
+      <option selected value="default">Seleccione una oferta</option>
       <option *ngFor="let offer of offers" [value]="offer?.versions[0]?.id">{{ offer?.versions[0]?.name }}</option>
     </select>
   </div>

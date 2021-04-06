@@ -12,7 +12,7 @@ import { Store } from '@ngrx/store';
 export class OfferComponent implements OnInit {
 
   offers: any = [];
-  slectedOffer: any = null;
+  slectedOffer: any = 'default';
 
   offerId: any = null;
   offerName: any = null;
