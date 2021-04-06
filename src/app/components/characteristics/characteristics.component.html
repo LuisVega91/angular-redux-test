@@ -1,0 +1,14 @@
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Caracteristicas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let characteristic of characteristics">
+        <td>{{ characteristic?.versions[0]?.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+
